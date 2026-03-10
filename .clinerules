@@ -1,0 +1,38 @@
+# Cline Project Rules — archive_nephron_org
+
+## Terminal Command Rules
+
+- **No embedded quotes inside strings.** Shell commands passed to `execute_command` must not contain quote characters (single or double) embedded inside a quoted string. This consistently causes the terminal to enter an escape/continuation mode and hang. If a command requires quotes inside a string (e.g., a git commit message with apostrophes, or a Python one-liner with inner quotes), write it to a temporary script file and execute the script instead, or restructure to avoid the embedded quotes entirely.
+
+  BAD:  `git commit -m "Fix O'Brien's link"`
+  BAD:  `python3 -c "print('hello')"`
+  GOOD: write a .py file and run it with `python3 script.py`
+  GOOD: use a commit message file with `git commit -F msg.txt`
+
+- Multi-line commit messages should be written to a temp file first:
+  `echo "first line" > /tmp/msg.txt && echo "" >> /tmp/msg.txt && echo "details" >> /tmp/msg.txt && git commit -F /tmp/msg.txt`
+
+## Project Context
+
+This is an archive of selected content from nephron.com and nephron.org, created and maintained by Stephen Z. Fadem, M.D. The archive preserves kidney disease education resources.
+
+### Archived Sections
+- `diet/` — Renal Nutrition (from nephron.org/nephsites/adp/)
+- `shaldon/` — 40 Years of Hemodialysis (Stanley Shaldon tribute videos)
+- `lundin/` — Lundin's Corner (patient education essays)
+- `htkw/` — How the Kidney Works (CKD education, 50+ pages)
+- `patient_education/` — Patient Education articles
+- `patient_safety/` — Patient Safety content
+- `human_interest/` — Human interest stories (doctor stories, tributes)
+- `photos/` — Radiology images (52 photos, originally at photos.szf.com)
+- `presentations/` — Slideshows (18 presentations)
+- `general/` — General References section from nephron.com homepage
+- `blogs/` — Nephrology blog links
+- `resources/` — Resource links
+- `regulatory/` — Regulatory references
+- `features/` — Featured content
+
+### Style Conventions
+- HTKW pages use navy (#000088) background, white text, yellow h3 headings, #d3cece left nav sidebar
+- Index pages (general, blogs, etc.) use white background, #000066 text, #980000 headings
+- All pages should have a `← Back to Homepage` link to `../index.html`
