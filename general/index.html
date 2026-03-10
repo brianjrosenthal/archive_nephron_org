@@ -7,101 +7,80 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #000066;
   background: #fff;
-  max-width: 900px;
+  max-width: 860px;
   margin: 2em auto;
   padding: 1em 2em;
   line-height: 1.6;
 }
-h1 {
-  font-size: 36px;
-  color: #980000;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
+h1 { font-size: 32px; color: #980000; font-weight: bold; margin-bottom: 0.3em; }
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   color: #000066;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
   border-bottom: 2px solid #980000;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.2em;
 }
 .intro {
-  background: #f0f0f0;
-  padding: 1em;
-  border-left: 4px solid #980000;
-  margin-bottom: 2em;
-}
-.link-list {
-  list-style: none;
-  padding: 0;
-}
-.link-item {
-  margin: 1.5em 0;
-  padding: 1em;
-  background: #f9f9f9;
-  border-left: 4px solid #4CAF50;
-  border-radius: 4px;
-}
-.link-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #000066;
-  margin-bottom: 0.3em;
-}
-.link-url {
+  background: #f0f4ff;
+  padding: 0.8em 1em;
+  border-left: 4px solid #000066;
+  margin-bottom: 1.5em;
   font-size: 14px;
-  color: #666;
-  word-break: break-all;
-  margin-bottom: 0.5em;
+  color: #333;
 }
-.link-status {
-  display: inline-block;
-  padding: 0.2em 0.6em;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  margin-top: 0.5em;
+ul.link-list { list-style: none; padding: 0; margin: 0; }
+ul.link-list li {
+  margin: 0.7em 0;
+  padding: 0.5em 0.7em;
+  border-left: 3px solid #4a90d9;
+  background: #f8f9ff;
 }
-.status-working {
-  background: #4CAF50;
-  color: white;
+ul.link-list li.broken {
+  border-left-color: #cc4444;
+  background: #fff8f8;
 }
-a {
+ul.link-list li a {
   color: #0000cc;
   text-decoration: none;
+  font-weight: bold;
 }
-a:hover {
-  text-decoration: underline;
+ul.link-list li a:hover { text-decoration: underline; }
+ul.link-list li .note {
+  font-size: 13px;
+  color: #666;
+  display: block;
+  margin-top: 0.2em;
+}
+.archived-badge {
+  display: inline-block;
+  background: #2a7a2a;
+  color: white;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.broken-badge {
+  display: inline-block;
+  background: #cc4444;
+  color: white;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 .footer {
-  margin-top: 3em;
+  margin-top: 2.5em;
   padding-top: 1em;
   border-top: 1px solid #ccc;
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
-  text-align: center;
-}
-.stats {
-  background: #e3f2fd;
-  padding: 1em;
-  border-radius: 4px;
-  margin: 2em 0;
-  text-align: center;
-}
-.stats-number {
-  font-size: 32px;
-  font-weight: bold;
-  color: #1976d2;
-}
-.stats-label {
-  font-size: 14px;
-  color: #666;
-  text-transform: uppercase;
 }
 </style>
 </head>
@@ -110,79 +89,151 @@ a:hover {
 <h1>General References</h1>
 
 <div class="intro">
-  <strong>Archived from:</strong> <a href="http://www.nephron.com" target="_blank">http://www.nephron.com</a> — 
-  General references section links preserved March 2026
+  This is the <strong>General References</strong> section from the nephron.com homepage, 
+  reproduced faithfully. Links checked March 2026. Nephron.org-hosted content that has been 
+  archived locally is linked to the local copy. Links that were unreachable are listed in the 
+  Broken Links section with their original URLs preserved.
 </div>
 
-<div class="stats">
-  <div>
-    <span class="stats-number">9</span> <span class="stats-label">Total Links</span> | 
-    <span class="stats-number" style="color: #4CAF50;">9</span> <span class="stats-label">External References</span>
-  </div>
-</div>
-
-<h2>External Reference Links</h2>
-<p style="color: #666; font-style: italic; margin-bottom: 1em;">All major medical and drug information websites (may have certificate warnings but are accessible)</p>
+<h2>Working Links</h2>
 
 <ul class="link-list">
-  <li class="link-item">
-    <div class="link-title">Medline Plus</div>
-    <div class="link-url"><a href="http://www.nlm.nih.gov/medlineplus/" target="_blank">http://www.nlm.nih.gov/medlineplus/</a></div>
-    <span class="link-status status-working">→ External Reference</span>
+
+  <li>
+    <a href="http://www.nephron.org/nephsites/journal_articles" target="_blank">Recent Articles by Journal</a>
+    <span class="note">nephron.org — recent nephrology journal articles organized by journal</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">PubMed</div>
-    <div class="link-url"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi" target="_blank">http://www.ncbi.nlm.nih.gov/entrez/query.fcgi</a></div>
-    <span class="link-status status-working">→ External Reference</span>
+  <li>
+    <a href="http://nephron.com/nephsites/nkfset09" target="_blank">Fadem Update Symposium Online 2009</a>
+    <span class="note">nephron.com — online continuing medical education symposium</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Google Scholar</div>
-    <div class="link-url"><a href="http://scholar.google.com/" target="_blank">http://scholar.google.com/</a></div>
-    <span class="link-status status-working">→ External Reference</span>
+  <li>
+    <a href="http://nephron.com/nephsites/nic/bill_buttonhole" target="_blank">Bill Peckham: Cannulating an AV Fistula Using the Buttonhole Technique</a>
+    <span class="note">nephron.com — patient perspective on buttonhole cannulation technique</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Wikipedia</div>
-    <div class="link-url"><a href="http://www.wikipedia.org/" target="_blank">http://www.wikipedia.org/</a></div>
-    <span class="link-status status-working">→ External Reference</span>
+  <li>
+    <a href="http://nephron.org/nephsites/nic/access_schon_06907" target="_blank">Vascular Access G Codes</a>
+    <span class="note">nephron.org — vascular access billing and G code information</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">WebMD</div>
-    <div class="link-url"><a href="http://www.webmd.com/" target="_blank">http://www.webmd.com/</a></div>
-    <span class="link-status status-working">→ External Reference</span>
+  <li>
+    <a href="http://www.nephron.org/nephsites/nic/patents" target="_blank">The Patent Page</a>
+    <span class="note">nephron.org — kidney-related patent listings</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">eMedicine</div>
-    <div class="link-url"><a href="http://www.emedicine.com/" target="_blank">http://www.emedicine.com/</a></div>
-    <span class="link-status status-working">→ External Reference</span>
+  <li>
+    <a href="http://nephron.org/nephsites/nic/clinical_trials" target="_blank">Clinical Trials — Keep Up With the Present</a>
+    <span class="note">nephron.org — listings of current kidney disease clinical trials</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">MedlinePlus Drug Information</div>
-    <div class="link-url"><a href="http://www.nlm.nih.gov/medlineplus/druginformation.html" target="_blank">http://www.nlm.nih.gov/medlineplus/druginformation.html</a></div>
-    <span class="link-status status-working">→ External Reference</span>
+  <li>
+    <a href="../diet/index.html">Renal Nutrition</a>
+    <span class="archived-badge">Archived Locally</span>
+    <span class="note">Originally at nephron.org/nephsites/adp/ — full diet education section archived in this collection</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">RxList</div>
-    <div class="link-url"><a href="http://www.rxlist.com/" target="_blank">http://www.rxlist.com/</a></div>
-    <span class="link-status status-working">→ External Reference</span>
+  <li>
+    <a href="../photos/index.html">Photographs (Radiology Images)</a>
+    <span class="archived-badge">Archived Locally</span>
+    <span class="note">Originally at photos.szf.com — 52 radiology images archived in this collection</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Drugs.com</div>
-    <div class="link-url"><a href="http://www.drugs.com/" target="_blank">http://www.drugs.com/</a></div>
-    <span class="link-status status-working">→ External Reference</span>
+</ul>
+
+<h2>Broken / Inaccessible Links</h2>
+<p style="font-size:13px;color:#666;margin-bottom:0.8em;">
+  These links appeared on the nephron.com General References section but were unreachable 
+  as of March 2026. Original URLs are preserved for reference.
+</p>
+
+<ul class="link-list">
+
+  <li class="broken">
+    <a href="http://unos.org/" target="_blank">Transplant Trends — UNOS</a>
+    <span class="broken-badge">Unreachable</span>
+    <span class="note">http://unos.org/ — United Network for Organ Sharing (may have moved to optn.transplant.hrsa.gov)</span>
   </li>
+
+  <li class="broken">
+    <a href="http://www.asn-online.org/education_and_meetings/renal_week/archives" target="_blank">ASN Abstracts Archives</a>
+    <span class="broken-badge">Unreachable</span>
+    <span class="note">http://www.asn-online.org/... — American Society of Nephrology annual meeting abstracts</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.nephron.org/issues/practice%20management/av/rpa_05" target="_blank">Information Systems and Nephrologists</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://www.nephron.org/issues/practice management/av/rpa_05</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.cms.hhs.gov/pqri/" target="_blank">Physician Voluntary Reporting Initiative (PQRI)</a>
+    <span class="broken-badge">Unreachable</span>
+    <span class="note">http://www.cms.hhs.gov/pqri/ — CMS domain has changed; resource may be at cms.gov</span>
+  </li>
+
+  <li class="broken">
+    <a href="https://www.medicare.gov/MPDPF/Public/Include/DataSection/Questions/Questions.asp" target="_blank">Find a Medicare Drug Plan</a>
+    <span class="broken-badge">Unreachable</span>
+    <span class="note">https://www.medicare.gov/... — old URL; Medicare plan finder has moved</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.kidneydrugcoverage.org/" target="_blank">Kidney Drug Coverage</a>
+    <span class="broken-badge">Unreachable</span>
+    <span class="note">http://www.kidneydrugcoverage.org/ — domain appears to be down</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://jama.ama-assn.org/cgi/content/full/289.19.2560v1" target="_blank">JNC VII — New Hypertension Guidelines</a>
+    <span class="broken-badge">403</span>
+    <span class="note">http://jama.ama-assn.org/... — JAMA has moved to jamanetwork.com; article access may require subscription</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://kidneycontenders.com" target="_blank">Kidney Contenders</a>
+    <span class="broken-badge">Unreachable</span>
+    <span class="note">http://kidneycontenders.com — domain appears to be down</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://nephron.com/ubb/Forum1/HTML/000023.html" target="_blank">NKF Consensus Report on Hypertension</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://nephron.com/ubb/Forum1/HTML/000023.html — old nephron.com forum page, no longer available</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.medicare.gov/Dialysis/home.asp" target="_blank">Compare Dialysis Units (Medicare)</a>
+    <span class="broken-badge">Unreachable</span>
+    <span class="note">http://www.medicare.gov/Dialysis/home.asp — dialysis facility comparison tool has moved</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://nephron.com/ubb/Forum1/HTML/000055.html" target="_blank">CDC Infection Guidelines</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://nephron.com/ubb/Forum1/HTML/000055.html — old nephron.com forum page, no longer available</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.surveymonkey.com/sr.aspx?sm=UG_2fQsM0V14Hoau5sJAftY7Q6gIjLH_2fTQnxJT0Xb7BDs_3d" target="_blank">ESA Survey Response</a>
+    <span class="broken-badge">Expired</span>
+    <span class="note">SurveyMonkey — old survey, link expired</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.surveymonkey.com/sr.aspx?sm=w9UNo16Sl7en_2b4BLBNuDesBmmSCSORLLaI_2bpBe_2fwmeA_3d" target="_blank">PQRI Survey Response</a>
+    <span class="broken-badge">Expired</span>
+    <span class="note">SurveyMonkey — old survey, link expired</span>
+  </li>
+
 </ul>
 
 <div class="footer">
-  <p><a href="../index.html">← Back to Homepage</a></p>
-  <p>Original content © Nephron Information Center | Link status checked March 2026</p>
+  <p><a href="../index.html">&larr; Back to Homepage</a></p>
+  <p>General References section reproduced from <a href="http://www.nephron.com" target="_blank">nephron.com</a> homepage. Link status checked March 2026.</p>
 </div>
 
 </body>
