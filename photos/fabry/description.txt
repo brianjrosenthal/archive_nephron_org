@@ -1,0 +1,5 @@
+<H1>
+Fabry's Disease
+</H1>
+<p>photo by Stephen Z. Fadem, M.D., FASN</p>
+<input type=button value="Back" onClick="history.go(-1)">

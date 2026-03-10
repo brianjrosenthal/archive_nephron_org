@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Update all existing presentation viewer pages with the missing slide fix
 """

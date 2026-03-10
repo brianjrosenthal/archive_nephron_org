@@ -1,0 +1,5 @@
+<H1>
+renal abcess
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value="Back" onClick="history.go(-1)">

@@ -1,0 +1,366 @@
+[
+  {
+    "folder": "AdrenalTb",
+    "image": "photo.jpg",
+    "description": "<H1> Adrenal tuberculosis\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "BilateralIVCs",
+    "image": "photo.jpg",
+    "description": "<H1> Bilateral ivcs </H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "FluidinPararenalSpace",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nFluid in pararenal space secondary to interstitial extravasation from distal obstructing stone\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "Lymphoma",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nLymphoma involving renal pelvis and peripancreatic nodes\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "MetastasisRtKidney",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nMetastasis to right kidney from lung\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "Multilocularcyst_nephroma",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nMultilocular renal cystic nephroma\r\n</H1>\r\n<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "NutcrackerSyndrome",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nNutcracker Syndrome - decreased function lt kidney due tp partial or subtotal obstruction left renal vein as it is compressed between superior mesenteric artery and aorta as it crosses midline  </H1>\r\n<p>courtesy Alan S, Melton, M.D, New York Presbyterian University</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "PolycysticKidneys",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nPolycystic kidneys\r\n</H1>\r\n<p>courtesy Alan S, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "PolycysticScontrast",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nPolycystic kidneys without contrast\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "RenalArtAneurysm",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nRenal artery aneurysm\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "RenalArtAneurysm2",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nRenal artery aneursym\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "RenalArtStenosis",
+    "image": "photo.jpg",
+    "description": null,
+    "has_image": true,
+    "has_description": false
+  },
+  {
+    "folder": "RenalArtStenosis1",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nRenal artery stenosis\r\n</H1>\r\n<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "RenalArteryStenosis",
+    "image": "photo.jpg",
+    "description": "<H1> Renal artery stenosis\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "RenalCellCa",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nRenal cell carcinoma with necrosis after contrast\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "RenalVThrombosis",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nRenal vein thrombosis - tumor thrombus from right renal cell carcinoma\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "Retrocaval Ureter",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nRetrocaval ureter\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "Ruptured Bladder",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nExtraperitoneal bladder rupture\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "SubcapsularHematoma",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nSubcapsular hematoma from trauma\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "Transitional Cell Ca Ureter",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nTransitional Cell carcinoma of ureter \r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "Transitional Cell Prox Ureter",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nTransitional cell carcinoma of proximal ureter\r\n</H1>\r\n<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "Traumatic injury rt renal pedicle",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nTraumatic injury right renal pedicle with right renal artery occluded\r\n</H1>\r\n<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "Ureterocele",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nUreterocele\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "WilmsTumor",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nWilm's Tumor\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "XanthogranulomatousPyelo",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nXanthogranulomatous pyelonephritis\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "aaa",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nabdominal aortic aneurysm\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "anemia1",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nThis person might have anemia. All dialysis patients should be carefully assessed for pallor. The conjunctiva are considered pale when no blood vessels can be seen. This suggests anemia. A hemoglobin level will quickly determine its presence.\r\n</H1>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "angiomyolipoma",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nangiolipoma\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "emphysematous_pyelo",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nemphysematous pyelonephritis\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "enlarged_l_renal_vein",
+    "image": "photo.jpg",
+    "description": "<H1> Enlarged left renal vein\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "enlargedleftrenalvein",
+    "image": "photo.jpg",
+    "description": "<H1> Enlarged left renal vein\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, Columbia Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "fabry",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nFabry's Disease\r\n</H1>\r\n<p>photo by Stephen Z. Fadem, M.D., FASN</p>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "fibromusculardysplasia",
+    "image": "photo.jpg",
+    "description": "<H1> Fibromuscular dysplasia </H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "horseshoekidney",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nhorseshoe kidney\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "hydronephrosis_US",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nhydronephrosis - ultrasound\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "kidney_cyst1",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nKidney cyst\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "kidneycyst2",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nkidney cyst\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "large_gonadal_V",
+    "image": "photo.jpg",
+    "description": "<H1> Enlarged left gonadal vein\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "left_uv_stone",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nleft uv stone\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "lymphoma_kidney",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nlymphoma - kidney\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "oncocytoma",
+    "image": "photo.jpg",
+    "description": "<H1>\r\noncocytoma</H1>\r\n<p>courtesy Alan S, Melton, M.D, New York University</p>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "perinephric_hematoma",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nperinephric hematoma\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "pyelonephritis",
+    "image": "photo.jpg",
+    "description": "<H1>\r\npyelonephritis\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "renal abscess",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nrenal abcess\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "renalcyst_contrast",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nrenal cysts - contrast\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "renalinfarcts_sicklecell",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nRenal infarcts from sickle cell anemia\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "scleroderma1",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nScleroderma\r\n</H1>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "scleroderma2",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nScleroderma\r\n</H1>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "scleroderma3",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nScleroderma\r\n</H1>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "selfstick1",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nThe AV Fistula\r\n</H1>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "transitional cell carcinoma",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nTransitional cell carcinoma\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>\r\n<input type=button value=\"Back\" onClick=\"history.go(-1)\">",
+    "has_image": true,
+    "has_description": true
+  },
+  {
+    "folder": "ureteralpolyp",
+    "image": "photo.jpg",
+    "description": "<H1>\r\nUreteral polyp\r\n</H1>\r\n<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>",
+    "has_image": true,
+    "has_description": true
+  }
+]

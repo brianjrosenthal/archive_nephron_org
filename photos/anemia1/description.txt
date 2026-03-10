@@ -1,0 +1,4 @@
+<H1>
+This person might have anemia. All dialysis patients should be carefully assessed for pallor. The conjunctiva are considered pale when no blood vessels can be seen. This suggests anemia. A hemoglobin level will quickly determine its presence.
+</H1>
+<input type=button value="Back" onClick="history.go(-1)">

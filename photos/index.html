@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radiology Images — Nephron.org Archive</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #000066;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 2em;
+  line-height: 1.6;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 2em;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+h1 {
+  font-size: 28px;
+  color: #000066;
+  margin-bottom: 0.5em;
+}
+.archived-note {
+  font-size: 12px;
+  color: #666;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+  margin-bottom: 1.5em;
+  border-radius: 4px;
+}
+.intro {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 2em;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 2em 0;
+}
+.photo-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: white;
+  transition: all 0.3s;
+}
+.photo-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+.photo-thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: #000;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  display: block;
+  cursor: pointer;
+}
+.photo-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000066;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.4;
+}
+.photo-description {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.back-link {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+}
+.back-link a {
+  color: #0000cc;
+  text-decoration: none;
+}
+.back-link a:hover {
+  text-decoration: underline;
+}
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+.lightbox-content {
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 1000px;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lightbox-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+.lightbox-caption {
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.lightbox-caption * {
+  color: white !important;
+}
+.lightbox-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.lightbox-close:hover {
+  color: #bbb;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="archived-note">
+    <strong>Archived from:</strong> <a href="http://www.nephron.com/photos" target="_blank">http://www.nephron.com/photos</a> — 
+    Archived March 2026
+  </div>
+
+  <h1>Radiology Images</h1>
+  
+  <div class="intro">
+    Collection of kidney and urological radiology images with clinical descriptions.
+  </div>
+
+  <div class="photo-grid">
+    <div class="photo-card">
+      <img src="aaa/photo.jpg" alt="aaa" class="photo-thumbnail" data-title="aaa" data-description="<H1>
+abdominal aortic aneurysm
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">aaa</div>
+      <div class="photo-description"><H1>
+abdominal aortic aneurysm
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="AdrenalTb/photo.jpg" alt="AdrenalTb" class="photo-thumbnail" data-title="AdrenalTb" data-description="<H1> Adrenal tuberculosis
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">AdrenalTb</div>
+      <div class="photo-description"><H1> Adrenal tuberculosis
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="anemia1/photo.jpg" alt="anemia1" class="photo-thumbnail" data-title="anemia1" data-description="<H1>
+This person might have anemia. All dialysis patients should be carefully assessed for pallor. The conjunctiva are considered pale when no blood vessels can be seen. This suggests anemia. A hemoglobin level will quickly determine its presence.
+</H1>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">anemia1</div>
+      <div class="photo-description"><H1>
+This person might have anemia. All dialysis patients should be carefully assessed for pallor. The conjunctiva are considered pale when no blood vessels can be seen. This suggests anemia. A hemoglobin level will quickly determine its presence.
+</H1>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="angiomyolipoma/photo.jpg" alt="angiomyolipoma" class="photo-thumbnail" data-title="angiomyolipoma" data-description="<H1>
+angiolipoma
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">angiomyolipoma</div>
+      <div class="photo-description"><H1>
+angiolipoma
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="BilateralIVCs/photo.jpg" alt="BilateralIVCs" class="photo-thumbnail" data-title="BilateralIVCs" data-description="<H1> Bilateral ivcs </H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">BilateralIVCs</div>
+      <div class="photo-description"><H1> Bilateral ivcs </H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="emphysematous_pyelo/photo.jpg" alt="emphysematous pyelo" class="photo-thumbnail" data-title="emphysematous pyelo" data-description="<H1>
+emphysematous pyelonephritis
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">emphysematous pyelo</div>
+      <div class="photo-description"><H1>
+emphysematous pyelonephritis
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="enlarged_l_renal_vein/photo.jpg" alt="enlarged l renal vein" class="photo-thumbnail" data-title="enlarged l renal vein" data-description="<H1> Enlarged left renal vein
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">enlarged l renal vein</div>
+      <div class="photo-description"><H1> Enlarged left renal vein
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="enlargedleftrenalvein/photo.jpg" alt="enlargedleftrenalvein" class="photo-thumbnail" data-title="enlargedleftrenalvein" data-description="<H1> Enlarged left renal vein
+</H1>
+<p>Courtesy Alan R, Melton, M.D, Columbia Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">enlargedleftrenalvein</div>
+      <div class="photo-description"><H1> Enlarged left renal vein
+</H1>
+<p>Courtesy Alan R, Melton, M.D, Columbia Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="fabry/photo.jpg" alt="fabry" class="photo-thumbnail" data-title="fabry" data-description="<H1>
+Fabry&#39;s Disease
+</H1>
+<p>photo by Stephen Z. Fadem, M.D., FASN</p>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">fabry</div>
+      <div class="photo-description"><H1>
+Fabry's Disease
+</H1>
+<p>photo by Stephen Z. Fadem, M.D., FASN</p>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="fibromusculardysplasia/photo.jpg" alt="fibromusculardysplasia" class="photo-thumbnail" data-title="fibromusculardysplasia" data-description="<H1> Fibromuscular dysplasia </H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">fibromusculardysplasia</div>
+      <div class="photo-description"><H1> Fibromuscular dysplasia </H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="FluidinPararenalSpace/photo.jpg" alt="FluidinPararenalSpace" class="photo-thumbnail" data-title="FluidinPararenalSpace" data-description="<H1>
+Fluid in pararenal space secondary to interstitial extravasation from distal obstructing stone
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">FluidinPararenalSpace</div>
+      <div class="photo-description"><H1>
+Fluid in pararenal space secondary to interstitial extravasation from distal obstructing stone
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="horseshoekidney/photo.jpg" alt="horseshoekidney" class="photo-thumbnail" data-title="horseshoekidney" data-description="<H1>
+horseshoe kidney
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">horseshoekidney</div>
+      <div class="photo-description"><H1>
+horseshoe kidney
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="hydronephrosis_US/photo.jpg" alt="hydronephrosis US" class="photo-thumbnail" data-title="hydronephrosis US" data-description="<H1>
+hydronephrosis - ultrasound
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">hydronephrosis US</div>
+      <div class="photo-description"><H1>
+hydronephrosis - ultrasound
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="kidney_cyst1/photo.jpg" alt="kidney cyst1" class="photo-thumbnail" data-title="kidney cyst1" data-description="<H1>
+Kidney cyst
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">kidney cyst1</div>
+      <div class="photo-description"><H1>
+Kidney cyst
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="kidneycyst2/photo.jpg" alt="kidneycyst2" class="photo-thumbnail" data-title="kidneycyst2" data-description="<H1>
+kidney cyst
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">kidneycyst2</div>
+      <div class="photo-description"><H1>
+kidney cyst
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="large_gonadal_V/photo.jpg" alt="large gonadal V" class="photo-thumbnail" data-title="large gonadal V" data-description="<H1> Enlarged left gonadal vein
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">large gonadal V</div>
+      <div class="photo-description"><H1> Enlarged left gonadal vein
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="left_uv_stone/photo.jpg" alt="left uv stone" class="photo-thumbnail" data-title="left uv stone" data-description="<H1>
+left uv stone
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">left uv stone</div>
+      <div class="photo-description"><H1>
+left uv stone
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="Lymphoma/photo.jpg" alt="Lymphoma" class="photo-thumbnail" data-title="Lymphoma" data-description="<H1>
+Lymphoma involving renal pelvis and peripancreatic nodes
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">Lymphoma</div>
+      <div class="photo-description"><H1>
+Lymphoma involving renal pelvis and peripancreatic nodes
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="lymphoma_kidney/photo.jpg" alt="lymphoma kidney" class="photo-thumbnail" data-title="lymphoma kidney" data-description="<H1>
+lymphoma - kidney
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">lymphoma kidney</div>
+      <div class="photo-description"><H1>
+lymphoma - kidney
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="MetastasisRtKidney/photo.jpg" alt="MetastasisRtKidney" class="photo-thumbnail" data-title="MetastasisRtKidney" data-description="<H1>
+Metastasis to right kidney from lung
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">MetastasisRtKidney</div>
+      <div class="photo-description"><H1>
+Metastasis to right kidney from lung
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="Multilocularcyst_nephroma/photo.jpg" alt="Multilocularcyst nephroma" class="photo-thumbnail" data-title="Multilocularcyst nephroma" data-description="<H1>
+Multilocular renal cystic nephroma
+</H1>
+<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">Multilocularcyst nephroma</div>
+      <div class="photo-description"><H1>
+Multilocular renal cystic nephroma
+</H1>
+<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="NutcrackerSyndrome/photo.jpg" alt="NutcrackerSyndrome" class="photo-thumbnail" data-title="NutcrackerSyndrome" data-description="<H1>
+Nutcracker Syndrome - decreased function lt kidney due tp partial or subtotal obstruction left renal vein as it is compressed between superior mesenteric artery and aorta as it crosses midline  </H1>
+<p>courtesy Alan S, Melton, M.D, New York Presbyterian University</p>" onclick="openLightbox(this)">
+      <div class="photo-title">NutcrackerSyndrome</div>
+      <div class="photo-description"><H1>
+Nutcracker Syndrome - decreased function lt kidney due tp partial or subtotal obstruction left renal vein as it is compressed between superior mesenteric artery and aorta as it crosses midline  </H1>
+<p>courtesy Alan S, Melton, M.D, New York Presbyterian University</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="oncocytoma/photo.jpg" alt="oncocytoma" class="photo-thumbnail" data-title="oncocytoma" data-description="<H1>
+oncocytoma</H1>
+<p>courtesy Alan S, Melton, M.D, New York University</p>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">oncocytoma</div>
+      <div class="photo-description"><H1>
+oncocytoma</H1>
+<p>courtesy Alan S, Melton, M.D, New York University</p>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="perinephric_hematoma/photo.jpg" alt="perinephric hematoma" class="photo-thumbnail" data-title="perinephric hematoma" data-description="<H1>
+perinephric hematoma
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">perinephric hematoma</div>
+      <div class="photo-description"><H1>
+perinephric hematoma
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="PolycysticKidneys/photo.jpg" alt="PolycysticKidneys" class="photo-thumbnail" data-title="PolycysticKidneys" data-description="<H1>
+Polycystic kidneys
+</H1>
+<p>courtesy Alan S, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">PolycysticKidneys</div>
+      <div class="photo-description"><H1>
+Polycystic kidneys
+</H1>
+<p>courtesy Alan S, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="PolycysticScontrast/photo.jpg" alt="PolycysticScontrast" class="photo-thumbnail" data-title="PolycysticScontrast" data-description="<H1>
+Polycystic kidneys without contrast
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">PolycysticScontrast</div>
+      <div class="photo-description"><H1>
+Polycystic kidneys without contrast
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="pyelonephritis/photo.jpg" alt="pyelonephritis" class="photo-thumbnail" data-title="pyelonephritis" data-description="<H1>
+pyelonephritis
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">pyelonephritis</div>
+      <div class="photo-description"><H1>
+pyelonephritis
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="renal abscess/photo.jpg" alt="renal abscess" class="photo-thumbnail" data-title="renal abscess" data-description="<H1>
+renal abcess
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">renal abscess</div>
+      <div class="photo-description"><H1>
+renal abcess
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="RenalArtAneurysm/photo.jpg" alt="RenalArtAneurysm" class="photo-thumbnail" data-title="RenalArtAneurysm" data-description="<H1>
+Renal artery aneurysm
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">RenalArtAneurysm</div>
+      <div class="photo-description"><H1>
+Renal artery aneurysm
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="RenalArtAneurysm2/photo.jpg" alt="RenalArtAneurysm2" class="photo-thumbnail" data-title="RenalArtAneurysm2" data-description="<H1>
+Renal artery aneursym
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">RenalArtAneurysm2</div>
+      <div class="photo-description"><H1>
+Renal artery aneursym
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="RenalArteryStenosis/photo.jpg" alt="RenalArteryStenosis" class="photo-thumbnail" data-title="RenalArteryStenosis" data-description="<H1> Renal artery stenosis
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">RenalArteryStenosis</div>
+      <div class="photo-description"><H1> Renal artery stenosis
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="RenalArtStenosis/photo.jpg" alt="RenalArtStenosis" class="photo-thumbnail" data-title="RenalArtStenosis" data-description="No description available" onclick="openLightbox(this)">
+      <div class="photo-title">RenalArtStenosis</div>
+      <div class="photo-description">No description available</div>
+    </div>
+    <div class="photo-card">
+      <img src="RenalArtStenosis1/photo.jpg" alt="RenalArtStenosis1" class="photo-thumbnail" data-title="RenalArtStenosis1" data-description="<H1>
+Renal artery stenosis
+</H1>
+<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">RenalArtStenosis1</div>
+      <div class="photo-description"><H1>
+Renal artery stenosis
+</H1>
+<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="RenalCellCa/photo.jpg" alt="RenalCellCa" class="photo-thumbnail" data-title="RenalCellCa" data-description="<H1>
+Renal cell carcinoma with necrosis after contrast
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">RenalCellCa</div>
+      <div class="photo-description"><H1>
+Renal cell carcinoma with necrosis after contrast
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="renalcyst_contrast/photo.jpg" alt="renalcyst contrast" class="photo-thumbnail" data-title="renalcyst contrast" data-description="<H1>
+renal cysts - contrast
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">renalcyst contrast</div>
+      <div class="photo-description"><H1>
+renal cysts - contrast
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="renalinfarcts_sicklecell/photo.jpg" alt="renalinfarcts sicklecell" class="photo-thumbnail" data-title="renalinfarcts sicklecell" data-description="<H1>
+Renal infarcts from sickle cell anemia
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">renalinfarcts sicklecell</div>
+      <div class="photo-description"><H1>
+Renal infarcts from sickle cell anemia
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="RenalVThrombosis/photo.jpg" alt="RenalVThrombosis" class="photo-thumbnail" data-title="RenalVThrombosis" data-description="<H1>
+Renal vein thrombosis - tumor thrombus from right renal cell carcinoma
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">RenalVThrombosis</div>
+      <div class="photo-description"><H1>
+Renal vein thrombosis - tumor thrombus from right renal cell carcinoma
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="Retrocaval Ureter/photo.jpg" alt="Retrocaval Ureter" class="photo-thumbnail" data-title="Retrocaval Ureter" data-description="<H1>
+Retrocaval ureter
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">Retrocaval Ureter</div>
+      <div class="photo-description"><H1>
+Retrocaval ureter
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="Ruptured Bladder/photo.jpg" alt="Ruptured Bladder" class="photo-thumbnail" data-title="Ruptured Bladder" data-description="<H1>
+Extraperitoneal bladder rupture
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">Ruptured Bladder</div>
+      <div class="photo-description"><H1>
+Extraperitoneal bladder rupture
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="scleroderma1/photo.jpg" alt="scleroderma1" class="photo-thumbnail" data-title="scleroderma1" data-description="<H1>
+Scleroderma
+</H1>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">scleroderma1</div>
+      <div class="photo-description"><H1>
+Scleroderma
+</H1>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="scleroderma2/photo.jpg" alt="scleroderma2" class="photo-thumbnail" data-title="scleroderma2" data-description="<H1>
+Scleroderma
+</H1>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">scleroderma2</div>
+      <div class="photo-description"><H1>
+Scleroderma
+</H1>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="scleroderma3/photo.jpg" alt="scleroderma3" class="photo-thumbnail" data-title="scleroderma3" data-description="<H1>
+Scleroderma
+</H1>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">scleroderma3</div>
+      <div class="photo-description"><H1>
+Scleroderma
+</H1>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="selfstick1/photo.jpg" alt="selfstick1" class="photo-thumbnail" data-title="selfstick1" data-description="<H1>
+The AV Fistula
+</H1>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">selfstick1</div>
+      <div class="photo-description"><H1>
+The AV Fistula
+</H1>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="SubcapsularHematoma/photo.jpg" alt="SubcapsularHematoma" class="photo-thumbnail" data-title="SubcapsularHematoma" data-description="<H1>
+Subcapsular hematoma from trauma
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">SubcapsularHematoma</div>
+      <div class="photo-description"><H1>
+Subcapsular hematoma from trauma
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="Transitional Cell Ca Ureter/photo.jpg" alt="Transitional Cell Ca Ureter" class="photo-thumbnail" data-title="Transitional Cell Ca Ureter" data-description="<H1>
+Transitional Cell carcinoma of ureter 
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">Transitional Cell Ca Ureter</div>
+      <div class="photo-description"><H1>
+Transitional Cell carcinoma of ureter 
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="transitional cell carcinoma/photo.jpg" alt="transitional cell carcinoma" class="photo-thumbnail" data-title="transitional cell carcinoma" data-description="<H1>
+Transitional cell carcinoma
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value=&quot;Back&quot; onClick=&quot;history.go(-1)&quot;>" onclick="openLightbox(this)">
+      <div class="photo-title">transitional cell carcinoma</div>
+      <div class="photo-description"><H1>
+Transitional cell carcinoma
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>
+<input type=button value="Back" onClick="history.go(-1)"></div>
+    </div>
+    <div class="photo-card">
+      <img src="Transitional Cell Prox Ureter/photo.jpg" alt="Transitional Cell Prox Ureter" class="photo-thumbnail" data-title="Transitional Cell Prox Ureter" data-description="<H1>
+Transitional cell carcinoma of proximal ureter
+</H1>
+<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">Transitional Cell Prox Ureter</div>
+      <div class="photo-description"><H1>
+Transitional cell carcinoma of proximal ureter
+</H1>
+<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="Traumatic injury rt renal pedicle/photo.jpg" alt="Traumatic injury rt renal pedicle" class="photo-thumbnail" data-title="Traumatic injury rt renal pedicle" data-description="<H1>
+Traumatic injury right renal pedicle with right renal artery occluded
+</H1>
+<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">Traumatic injury rt renal pedicle</div>
+      <div class="photo-description"><H1>
+Traumatic injury right renal pedicle with right renal artery occluded
+</H1>
+<p>courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="ureteralpolyp/photo.jpg" alt="ureteralpolyp" class="photo-thumbnail" data-title="ureteralpolyp" data-description="<H1>
+Ureteral polyp
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">ureteralpolyp</div>
+      <div class="photo-description"><H1>
+Ureteral polyp
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="Ureterocele/photo.jpg" alt="Ureterocele" class="photo-thumbnail" data-title="Ureterocele" data-description="<H1>
+Ureterocele
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">Ureterocele</div>
+      <div class="photo-description"><H1>
+Ureterocele
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="WilmsTumor/photo.jpg" alt="WilmsTumor" class="photo-thumbnail" data-title="WilmsTumor" data-description="<H1>
+Wilm&#39;s Tumor
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">WilmsTumor</div>
+      <div class="photo-description"><H1>
+Wilm's Tumor
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+    <div class="photo-card">
+      <img src="XanthogranulomatousPyelo/photo.jpg" alt="XanthogranulomatousPyelo" class="photo-thumbnail" data-title="XanthogranulomatousPyelo" data-description="<H1>
+Xanthogranulomatous pyelonephritis
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p>" onclick="openLightbox(this)">
+      <div class="photo-title">XanthogranulomatousPyelo</div>
+      <div class="photo-description"><H1>
+Xanthogranulomatous pyelonephritis
+</H1>
+<p>Courtesy Alan R, Melton, M.D, New York Presbyterian Hospital</p></div>
+    </div>
+  </div>
+
+  <div class="back-link">
+    <p><a href="../index.html">← Back to Archive Home</a></p>
+  </div>
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <div class="lightbox-content" onclick="event.stopPropagation()">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-image" src="">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+</div>
+
+<script>
+function openLightbox(img) {
+  const title = img.getAttribute('data-title');
+  const description = img.getAttribute('data-description');
+  
+  document.getElementById('lightbox').style.display = 'block';
+  document.getElementById('lightbox-img').src = img.src;
+  document.getElementById('lightbox-caption').innerHTML = '<strong>' + title + '</strong><br>' + description;
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+}
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeLightbox();
+  }
+});
+</script>
+
+</body>
+</html>
