@@ -1,0 +1,150 @@
+Checking 124 URLs...
+
+⟳ http://hh.nephron.com (JS Redirect)
+✗ http://nephron.com/dmprvnt.html (Status: 404)
+✗ http://nephron.com/goldennephron.html (Status: 404)
+✗ http://nephron.com/htkw.html (Status: 404)
+✗ http://nephron.com/ifkf2002_pres.html (Status: 404)
+✗ http://nephron.com/ifkf_pres03.htm (Status: 404)
+✗ http://nephron.com/kidneydisease.html (Status: 404)
+✓ http://nephron.com/nephsites/aakp-ckd-screening
+⟳ http://nephron.com/nephsites/nic/bill_buttonhole (JS Redirect)
+⟳ http://nephron.com/nephsites/nic/doi (JS Redirect)
+⟳ http://nephron.com/nephsites/nic/form_recipes (JS Redirect)
+⟳ http://nephron.com/nephsites/nic/kidney_study (JS Redirect)
+⟳ http://nephron.com/nephsites/nic/life.html (JS Redirect)
+✓ http://nephron.com/nephsites/nic/message_to_patients
+⟳ http://nephron.com/nephsites/nic/michener.html (JS Redirect)
+⟳ http://nephron.com/nephsites/nic/michenertribute.html (JS Redirect)
+⟳ http://nephron.com/nephsites/nic/oneyearlater.html (JS Redirect)
+⟳ http://nephron.com/nephsites/nic/rememberingKris (JS Redirect)
+⟳ http://nephron.com/nephsites/nic/sarcoma_story (JS Redirect)
+✓ http://nephron.com/nephsites/nkfset09
+✗ http://nephron.com/ubb/Forum1/HTML/000023.html (Status: 404)
+✗ http://nephron.com/ubb/Forum1/HTML/000055.html (Status: 404)
+✓ http://nephron.org/cci
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/alport_syndrome (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/aminoaciduria (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/cystinosis (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/cystinuria (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/fabry_disease (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/familial_hypophosphatemia (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/fanconi_syndrome (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/hartnups_disease (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/hyperoxaluria (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/nail_patella (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/oculocerebrorenal_syndrome (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/pseudohypoaldosteronism (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/renal_glycosuria (JS Redirect)
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/renal_tubular_transport_errors (JS Redirect)
+✓ http://nephron.org/diseases_categories/hereditary_nephritis/section_description
+⟳ http://nephron.org/diseases_categories/hereditary_nephritis/vhl (JS Redirect)
+⟳ http://nephron.org/diseases_categories/interstitial_nephritis/allergic_nephropathies (JS Redirect)
+⟳ http://nephron.org/diseases_categories/interstitial_nephritis/balkan_nephropathy (JS Redirect)
+⟳ http://nephron.org/diseases_categories/interstitial_nephritis/chemotherapy (JS Redirect)
+⟳ http://nephron.org/diseases_categories/interstitial_nephritis/heavy_metals (JS Redirect)
+⟳ http://nephron.org/diseases_categories/interstitial_nephritis/myeloma_kidney (JS Redirect)
+✓ http://nephron.org/diseases_categories/interstitial_nephritis/section_description
+⟳ http://nephron.org/diseases_categories/other_conditions/cortical_necrosis (JS Redirect)
+⟳ http://nephron.org/diseases_categories/other_conditions/diabetes_insipidus (JS Redirect)
+⟳ http://nephron.org/diseases_categories/other_conditions/renal_tuberculosis (JS Redirect)
+✓ http://nephron.org/diseases_categories/other_conditions/section_description
+⟳ http://nephron.org/diseases_categories/primary_gn/fgs (JS Redirect)
+⟳ http://nephron.org/diseases_categories/primary_gn/membranoproliferative_gn (JS Redirect)
+⟳ http://nephron.org/diseases_categories/primary_gn/membranous_nephropathy (JS Redirect)
+⟳ http://nephron.org/diseases_categories/primary_gn/minimal_change_gn (JS Redirect)
+⟳ http://nephron.org/diseases_categories/rpgn/anti_gbm (JS Redirect)
+⟳ http://nephron.org/diseases_categories/rpgn/churg_strauss (JS Redirect)
+⟳ http://nephron.org/diseases_categories/rpgn/goodpasture_syndrome (JS Redirect)
+⟳ http://nephron.org/diseases_categories/rpgn/microscopic_variant_pan (JS Redirect)
+⟳ http://nephron.org/diseases_categories/rpgn/pauci_immune_glomerulonephritis (JS Redirect)
+⟳ http://nephron.org/diseases_categories/rpgn/polyarteritis_nodosa (JS Redirect)
+✓ http://nephron.org/diseases_categories/rpgn/section_description
+⟳ http://nephron.org/diseases_categories/rpgn/wegeners (JS Redirect)
+⟳ http://nephron.org/diseases_categories/secondary_nephritis/aids_nephropathy (JS Redirect)
+⟳ http://nephron.org/diseases_categories/secondary_nephritis/amyloidosis (JS Redirect)
+⟳ http://nephron.org/diseases_categories/secondary_nephritis/diabetic-nephropathy (JS Redirect)
+⟳ http://nephron.org/diseases_categories/secondary_nephritis/glomerulonephritis_infectious (JS Redirect)
+⟳ http://nephron.org/diseases_categories/secondary_nephritis/hepatitis (JS Redirect)
+⟳ http://nephron.org/diseases_categories/secondary_nephritis/lupus_nephritis (JS Redirect)
+⟳ http://nephron.org/diseases_categories/secondary_nephritis/myeloma (JS Redirect)
+⟳ http://nephron.org/diseases_categories/secondary_nephritis/sarcoid (JS Redirect)
+⟳ http://nephron.org/diseases_categories/secondary_nephritis/scleroderma (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/acid_base_disorders (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/acute_kidney_failure (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/albuminuria (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/chronic_kidney_disease (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/chronic_kidney_failure (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/cystic_kidneys (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/electrolytes (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/fanconi_syndrome (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/glomerulonephropathies (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/hematuria (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/hemolytic_uremic_syndrome (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/hepatorenal_syndrome (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/hydronephrosis (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/hypertension (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/kidney_neoplasms (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/kidney_stones (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/mbd (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/nephritis (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/papillary_necrosis (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/prostate_disorders (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/proteinuria (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/pyelonephritis (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/renal_artery_obstruction (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/renalvasculardisease (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/rta (JS Redirect)
+✓ http://nephron.org/diseases_categories/syndromes/section_description
+⟳ http://nephron.org/diseases_categories/syndromes/transplantation (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/uremia (JS Redirect)
+⟳ http://nephron.org/diseases_categories/syndromes/vasculitis (JS Redirect)
+✓ http://nephron.org/diseases_categories/syndromes/zellweger syndrome
+⟳ http://nephron.org/nephsites/journal_articles (JS Redirect)
+⟳ http://nephron.org/nephsites/journals/index_html (JS Redirect)
+⟳ http://nephron.org/nephsites/nic/access_schon_06907 (JS Redirect)
+⟳ http://nephron.org/nephsites/nic/administrator (JS Redirect)
+⟳ http://nephron.org/nephsites/nic/clinical_trials (JS Redirect)
+⟳ http://nephron.org/nephsites/nic/disasters (JS Redirect)
+⟳ http://nephron.org/nephsites/nic/fadem (JS Redirect)
+⟳ http://nephron.org/nephsites/nic/guestbook_form (JS Redirect)
+✓ http://nephron.org/nephsites/nic/headlines
+⟳ http://nephron.org/nephsites/nic/tours_angioaccess2010 (JS Redirect)
+✓ http://nephron.org/php/CFC.htm
+✓ http://nephron.org/php/Meaningful_Use.htm
+⟳ http://www.nephron.org/issues (JS Redirect)
+✗ http://www.nephron.org/issues/practice%20management/av/rpa_05 (Status: 404)
+⟳ http://www.nephron.org/nephsites/disaster_page (JS Redirect)
+⟳ http://www.nephron.org/nephsites/journal_articles (JS Redirect)
+⟳ http://www.nephron.org/nephsites/nic/dorsum (JS Redirect)
+⟳ http://www.nephron.org/nephsites/nic/fadem (JS Redirect)
+⟳ http://www.nephron.org/nephsites/nic/patents (JS Redirect)
+✓ http://www.nephron.org/nephsites/nic/saving_veins.html
+⟳ http://www.nephron.org/nephsites/nic/self_cannulation.htm (JS Redirect)
+⟳ http://www.nephron.org/nephsites/nic/service.html (JS Redirect)
+✓ http://www.nephron.org/nephsites/nic/tifrecipes
+⟳ http://www.nephron.org/nephsites/nic/zen_weintraub.html (JS Redirect)
+
+============================================================
+SUMMARY:
+Valid URLs: 15
+Redirect URLs: 100
+Error URLs: 9
+============================================================
+
+VALID ARCHIVABLE URLs:
+  http://nephron.com/nephsites/aakp-ckd-screening
+  http://nephron.com/nephsites/nic/message_to_patients
+  http://nephron.com/nephsites/nkfset09
+  http://nephron.org/cci
+  http://nephron.org/diseases_categories/hereditary_nephritis/section_description
+  http://nephron.org/diseases_categories/interstitial_nephritis/section_description
+  http://nephron.org/diseases_categories/other_conditions/section_description
+  http://nephron.org/diseases_categories/rpgn/section_description
+  http://nephron.org/diseases_categories/syndromes/section_description
+  http://nephron.org/diseases_categories/syndromes/zellweger syndrome
+  http://nephron.org/nephsites/nic/headlines
+  http://nephron.org/php/CFC.htm
+  http://nephron.org/php/Meaningful_Use.htm
+  http://www.nephron.org/nephsites/nic/saving_veins.html
+  http://www.nephron.org/nephsites/nic/tifrecipes
