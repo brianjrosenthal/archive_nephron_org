@@ -7,118 +7,84 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #000066;
   background: #fff;
-  max-width: 900px;
+  max-width: 860px;
   margin: 2em auto;
   padding: 1em 2em;
   line-height: 1.6;
 }
-h1 {
-  font-size: 36px;
-  color: #980000;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
+h1 { font-size: 32px; color: #980000; font-weight: bold; margin-bottom: 0.3em; }
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   color: #000066;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
   border-bottom: 2px solid #980000;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.2em;
 }
 .intro {
-  background: #f0f0f0;
-  padding: 1em;
-  border-left: 4px solid #980000;
-  margin-bottom: 2em;
-}
-.link-list {
-  list-style: none;
-  padding: 0;
-}
-.link-item {
-  margin: 1.5em 0;
-  padding: 1em;
-  background: #f9f9f9;
-  border-left: 4px solid #4CAF50;
-  border-radius: 4px;
-}
-.link-item.broken {
-  background: #fff0f0;
-  border-left-color: #d32f2f;
-}
-.link-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #000066;
-  margin-bottom: 0.3em;
-}
-.link-item.broken .link-title {
-  color: #d32f2f;
-}
-.link-url {
+  background: #f0f4ff;
+  padding: 0.8em 1em;
+  border-left: 4px solid #000066;
+  margin-bottom: 1.5em;
   font-size: 14px;
-  color: #666;
-  word-break: break-all;
-  margin-bottom: 0.5em;
+  color: #333;
 }
-.link-status {
-  display: inline-block;
-  padding: 0.2em 0.6em;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  margin-top: 0.5em;
+ul.link-list { list-style: none; padding: 0; margin: 0; }
+ul.link-list li {
+  margin: 0.5em 0;
+  padding: 0.45em 0.7em;
+  border-left: 3px solid #4a90d9;
+  background: #f8f9ff;
 }
-.status-working {
-  background: #4CAF50;
-  color: white;
+ul.link-list li.broken {
+  border-left-color: #cc4444;
+  background: #fff8f8;
 }
-.status-broken {
-  background: #d32f2f;
-  color: white;
+ul.link-list li.restricted {
+  border-left-color: #e68a00;
+  background: #fff8ee;
 }
-.error-detail {
-  font-size: 13px;
-  color: #d32f2f;
-  font-style: italic;
-  margin-top: 0.5em;
-}
-a {
+ul.link-list li a {
   color: #0000cc;
   text-decoration: none;
+  font-weight: bold;
 }
-a:hover {
-  text-decoration: underline;
+ul.link-list li a:hover { text-decoration: underline; }
+ul.link-list li .note {
+  font-size: 13px;
+  color: #666;
+  display: block;
+  margin-top: 0.1em;
+}
+.broken-badge {
+  display: inline-block;
+  background: #cc4444;
+  color: white;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.restricted-badge {
+  display: inline-block;
+  background: #e68a00;
+  color: white;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 .footer {
-  margin-top: 3em;
+  margin-top: 2.5em;
   padding-top: 1em;
   border-top: 1px solid #ccc;
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
-  text-align: center;
-}
-.stats {
-  background: #e3f2fd;
-  padding: 1em;
-  border-radius: 4px;
-  margin: 2em 0;
-  text-align: center;
-}
-.stats-number {
-  font-size: 32px;
-  font-weight: bold;
-  color: #1976d2;
-}
-.stats-label {
-  font-size: 14px;
-  color: #666;
-  text-transform: uppercase;
 }
 </style>
 </head>
@@ -127,153 +93,275 @@ a:hover {
 <h1>Resources</h1>
 
 <div class="intro">
-  <strong>Archived from:</strong> <a href="http://www.nephron.com" target="_blank">http://www.nephron.com</a> — 
-  Resources section links preserved March 2026
+  This is the <strong>Resources</strong> section from the nephron.com homepage, reproduced faithfully.
+  Links checked March 2026. Unreachable links are listed at the bottom with original URLs preserved.
 </div>
 
-<div class="stats">
-  <div>
-    <span class="stats-number">20</span> <span class="stats-label">Total Links</span> | 
-    <span class="stats-number" style="color: #4CAF50;">18</span> <span class="stats-label">External Resources</span> | 
-    <span class="stats-number" style="color: #d32f2f;">2</span> <span class="stats-label">Broken</span>
-  </div>
-</div>
-
-<h2>External Resource Links</h2>
-<p style="color: #666; font-style: italic; margin-bottom: 1em;">These external resources may have certificate warnings but are generally accessible</p>
+<h2>Working Links</h2>
 
 <ul class="link-list">
-  <li class="link-item">
-    <div class="link-title">Kidney Disease Education (NKDEP)</div>
-    <div class="link-url"><a href="http://www.nkdep.nih.gov/" target="_blank">http://www.nkdep.nih.gov/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+
+  <li>
+    <a href="http://nephron.com/nephsites/aakp-ckd-screening" target="_blank">AAKP Position Paper on CKD Screening</a>
+    <span class="note">nephron.com &mdash; American Association of Kidney Patients position on CKD screening</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">National Kidney Foundation</div>
-    <div class="link-url"><a href="http://www.kidney.org/" target="_blank">http://www.kidney.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://www.cms.gov/Medicare/Provider-Enrollment-and-Certification/SurveyCertificationGenInfo/Downloads/Survey-and-Cert-Letter-12-41.pdf" target="_blank">CMS &mdash; Core Survey Process</a>
+    <span class="note">cms.gov &mdash; CMS Survey and Certification letter on the ESRD core survey process</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">American Society of Nephrology</div>
-    <div class="link-url"><a href="http://www.asn-online.org/" target="_blank">http://www.asn-online.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://5diamondpatientsafety.org/" target="_blank">5 Diamond Patient Safety</a>
+    <span class="note">5diamondpatientsafety.org &mdash; Patient safety program for dialysis facilities</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)</div>
-    <div class="link-url"><a href="http://www2.niddk.nih.gov/" target="_blank">http://www2.niddk.nih.gov/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://szf.com/docs/meaningful_use/" target="_blank">Meaningful Use &mdash; Forum Lecture</a>
+    <span class="note">szf.com &mdash; Forum lecture on CMS Meaningful Use requirements</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Renal Physicians Association</div>
-    <div class="link-url"><a href="http://www.renalmd.org/" target="_blank">http://www.renalmd.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://www.fmqai.com/library/attachment-library/Medical%20Director%20Toolkit%20062112[1].pdf" target="_blank">Medical Director Toolkit &mdash; Forum of ESRD Networks 2012</a>
+    <span class="note">fmqai.com &mdash; PDF toolkit for ESRD facility medical directors (2012)</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">American Association of Kidney Patients</div>
-    <div class="link-url"><a href="http://www.aakp.org/" target="_blank">http://www.aakp.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://nephron.org/nephsites/nic/tours_angioaccess2010" target="_blank">Angioaccess for Dialysis 2010</a>
+    <span class="note">nephron.org &mdash; Educational content on angioaccess for dialysis patients</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Medscape Nephrology</div>
-    <div class="link-url"><a href="http://www.medscape.com/nephrology" target="_blank">http://www.medscape.com/nephrology</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://www.fda.gov/NewsEvents/Newsroom/PressAnnouncements/default.htm" target="_blank">FDA News Releases</a>
+    <span class="note">fda.gov &mdash; FDA press announcements and news</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">eMedicine Nephrology</div>
-    <div class="link-url"><a href="http://emedicine.medscape.com/nephrology" target="_blank">http://emedicine.medscape.com/nephrology</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://health.nytimes.com/health/guides/disease/chronic-renal-failure/overview.html" target="_blank">New York Times Health Guide &mdash; Chronic Renal Failure</a>
+    <span class="note">nytimes.com &mdash; NYT Health overview of chronic renal failure</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Kidney Atlas</div>
-    <div class="link-url"><a href="http://www.kidneyatlas.org/" target="_blank">http://www.kidneyatlas.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://health.nytimes.com/ref/health/healthguide/esn-kidney-disease-expert.html" target="_blank">New York Times &mdash; ESRD Modalities</a>
+    <span class="note">nytimes.com &mdash; NYT Health guide on kidney disease treatment modalities</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">American Kidney Fund</div>
-    <div class="link-url"><a href="http://www.kidneyfund.org/" target="_blank">http://www.kidneyfund.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://www.nephron.org/nephsites/disaster_page" target="_blank">Disaster Page &mdash; Hurricane Season</a>
+    <span class="note">nephron.org &mdash; Guidance for kidney patients during hurricane and disaster events</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">The Kidney School</div>
-    <div class="link-url"><a href="http://www.kidneyschool.org/" target="_blank">http://www.kidneyschool.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://www.homedialysis.org/" target="_blank">Home Dialysis Central</a>
+    <span class="note">homedialysis.org &mdash; Resources for home dialysis patients</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Life Options</div>
-    <div class="link-url"><a href="http://www.lifeoptions.org/" target="_blank">http://www.lifeoptions.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://www.accreditedonlinecolleges.org" target="_blank">AccreditedOnlineColleges.org</a>
+    <span class="note">accreditedonlinecolleges.org &mdash; Healthcare education resource</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Kidney Patient Guide (UK)</div>
-    <div class="link-url"><a href="http://www.kidneypatientguide.org.uk/" target="_blank">http://www.kidneypatientguide.org.uk/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://www.gamuts.net/chorus/index/53.html" target="_blank">CHORUS Kidney X-rays</a>
+    <span class="note">gamuts.net &mdash; CHORUS radiology teaching file for kidney imaging</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">PKD Foundation</div>
-    <div class="link-url"><a href="http://www.pkdcure.org/" target="_blank">http://www.pkdcure.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="https://www.med.illinois.edu/m2/pathology/PathAtlasf/atlascontents.html" target="_blank">Urbana Atlas of Pathology</a>
+    <span class="note">med.illinois.edu &mdash; University of Illinois pathology atlas including renal pathology</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">IgA Nephropathy Support Network</div>
-    <div class="link-url"><a href="http://www.igan.org/" target="_blank">http://www.igan.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://nephron.com/nephsites/nic/form_recipes" target="_blank">Submit Recipe to KidneyRecipes.com</a>
+    <span class="note">nephron.com &mdash; Submit kidney-friendly recipes</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Renal Support Network</div>
-    <div class="link-url"><a href="http://www.rsnhope.org/" target="_blank">http://www.rsnhope.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://renalworld.com" target="_blank">RenalWorld</a>
+    <span class="note">renalworld.com &mdash; International nephrology resources and links</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Home Dialysis Central</div>
-    <div class="link-url"><a href="http://www.homedialysis.org/" target="_blank">http://www.homedialysis.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://nephron.com/nephsites/nic/doi" target="_blank">Digital Object Identifier Link</a>
+    <span class="note">nephron.com &mdash; DOI lookup tool for medical journal articles</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">International Society for Peritoneal Dialysis</div>
-    <div class="link-url"><a href="http://www.ispd.org/" target="_blank">http://www.ispd.org/</a></div>
-    <span class="link-status status-working">→ External Resource</span>
+  <li>
+    <a href="http://www.nephron.org/nephsites/journal_articles" target="_blank">Recent Journal Articles</a>
+    <span class="note">nephron.org &mdash; Recent nephrology journal articles</span>
   </li>
+
+  <li>
+    <a href="http://nephron.org/nephsites/journals/index_html" target="_blank">Journals Page</a>
+    <span class="note">nephron.org &mdash; Nephrology journals index</span>
+  </li>
+
+  <li>
+    <a href="http://nephron.org/nephsites/nic/protein_intake" target="_blank">The Protein Intake Formula</a>
+    <span class="note">nephron.org &mdash; Protein intake calculation for kidney disease patients</span>
+  </li>
+
+  <li>
+    <a href="http://www.nephron.org/nephsites/nic/dorsum" target="_blank">Saving Veins for an AV Fistula</a>
+    <span class="note">nephron.org &mdash; Patient education on preserving arm veins for fistula creation</span>
+  </li>
+
+  <li>
+    <a href="http://nephron.com/nephsites/nic/rememberingKris" target="_blank">Remembering Kris</a>
+    <span class="note">nephron.com &mdash; Memorial page</span>
+  </li>
+
+  <li>
+    <a href="http://nephron.org/nephsites/nic/disasters" target="_blank">Kidneydisaster.org</a>
+    <span class="note">nephron.org &mdash; Kidney disaster preparedness resources</span>
+  </li>
+
+  <li>
+    <a href="https://www.renalbusiness.com/articles/cultural-differences-in-dialysis.html" target="_blank">Cultural Sensitivity (<em>Renal Business Today</em>)</a>
+    <span class="note">renalbusiness.com &mdash; Article on cultural differences in dialysis care</span>
+  </li>
+
+  <li>
+    <a href="http://fadem.org/docs/comp_note3.pdf" target="_blank">Nephrologist's Comp Note Form</a>
+    <span class="note">fadem.org &mdash; PDF documentation form for nephrologists</span>
+  </li>
+
+  <li>
+    <a href="http://www.nephron.org/nephsites/nic/tifrecipes" target="_blank">Wikikidney Recipe Club</a>
+    <span class="note">nephron.org &mdash; Kidney-friendly recipes from Wikikidney</span>
+  </li>
+
+  <li>
+    <a href="http://www.nephron.org/issues" target="_blank">Issues in Nephrology</a>
+    <span class="note">nephron.org &mdash; Issues and topics in nephrology practice</span>
+  </li>
+
 </ul>
 
-<h2>Broken Links</h2>
-<p style="color: #d32f2f; font-style: italic; margin-bottom: 1em;">These resources are no longer available</p>
+<h2>Bot-Blocked / May Work in Browser</h2>
+<p style="font-size:13px;color:#666;margin-bottom:0.8em;">
+  These links returned 403 to automated checkers but likely work when opened in a browser.
+</p>
 
 <ul class="link-list">
-  <li class="link-item broken">
-    <div class="link-title">Nephrology Channel</div>
-    <div class="link-url">http://www.healthcommunities.com/kidney-disease/overview-of-kidney-disease.shtml</div>
-    <span class="link-status status-broken">✗ Broken</span>
-    <div class="error-detail">Domain not found - site no longer exists</div>
+
+  <li class="restricted">
+    <a href="http://www.renalmd.org/Public-Policy-in-a-Minute/" target="_blank">RPA: Public Policy in a Minute</a>
+    <span class="restricted-badge">403</span>
+    <span class="note">renalmd.org &mdash; Renal Physicians Association public policy updates</span>
   </li>
 
-  <li class="link-item broken">
-    <div class="link-title">The Kidney Information Clearinghouse</div>
-    <div class="link-url">http://kidney.niddk.nih.gov/</div>
-    <span class="link-status status-broken">✗ Broken</span>
-    <div class="error-detail">Domain not found - site no longer exists</div>
+  <li class="restricted">
+    <a href="http://www.annals.org/podcast/" target="_blank">Annals of Internal Medicine Podcasts</a>
+    <span class="restricted-badge">403</span>
+    <span class="note">annals.org &mdash; Podcast episodes from Annals of Internal Medicine</span>
   </li>
+
+  <li class="restricted">
+    <a href="http://www.nature.com/ki/podcast/index.html" target="_blank">ISN Podcasts (Kidney International)</a>
+    <span class="restricted-badge">403</span>
+    <span class="note">nature.com &mdash; International Society of Nephrology / Kidney International podcast</span>
+  </li>
+
+</ul>
+
+<h2>Broken / Inaccessible Links</h2>
+<p style="font-size:13px;color:#666;margin-bottom:0.8em;">
+  These links appeared on the nephron.com Resources section but were unreachable as of March 2026.
+  Original URLs are preserved for reference.
+</p>
+
+<ul class="link-list">
+
+  <li class="broken">
+    <a href="http://innovation.cms.gov/initiatives/comprehensive-ESRD-care/" target="_blank">ESRD ESCO Update</a>
+    <span class="broken-badge">404</span>
+    <span class="note">innovation.cms.gov &mdash; CMS Innovation Center ESRD ESCO initiative page; also original URL was malformed in source</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.medicine.ox.ac.uk/bandolier/glossary.html" target="_blank">Evidence Based Medicine Glossary</a>
+    <span class="broken-badge">404</span>
+    <span class="note">medicine.ox.ac.uk &mdash; Oxford Bandolier EBM glossary page no longer available</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.davita.com/treatmentevaluator/tool.cfm" target="_blank">DaVita's Modality Calculator</a>
+    <span class="broken-badge">404</span>
+    <span class="note">davita.com &mdash; DaVita treatment modality evaluator tool no longer at this URL</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://wikikidney.org" target="_blank">Wikikidney</a>
+    <span class="broken-badge">500</span>
+    <span class="note">wikikidney.org &mdash; Server error; site may be down</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://online.epocrates.com/public/mobile/iphone/" target="_blank">Epocrates for iPhone</a>
+    <span class="broken-badge">404</span>
+    <span class="note">epocrates.com &mdash; Old Epocrates iPhone app page no longer available</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://foodvalues.us" target="_blank">Finding Food Values</a>
+    <span class="broken-badge">500</span>
+    <span class="note">foodvalues.us &mdash; Server error; site may be down</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://kidneyday.org" target="_blank">THINK KIDNEY (kidneyday.org)</a>
+    <span class="broken-badge">404</span>
+    <span class="note">kidneyday.org &mdash; Site no longer available at this URL</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.wikikidney.org/index.php/Beyond_Newsdesk" target="_blank">From Wikikidney &mdash; Beyond Newsdesk</a>
+    <span class="broken-badge">500</span>
+    <span class="note">wikikidney.org &mdash; Server error; site may be down</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.fistulafirst.org" target="_blank">Fistula First</a>
+    <span class="broken-badge">dead</span>
+    <span class="note">fistulafirst.org &mdash; Domain no longer resolves; Fistula First Breakthrough Initiative has ended</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.renalworld.com/regions_links/America/united_states" target="_blank">Some Key Kidney Sites from Renalworld USA</a>
+    <span class="broken-badge">404</span>
+    <span class="note">renalworld.com &mdash; Specific subpage no longer available (renalworld.com root still works)</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.aakp.org/AAKP/pressroom.htm" target="_blank">AAKP News</a>
+    <span class="broken-badge">404</span>
+    <span class="note">aakp.org &mdash; Old AAKP press room URL no longer available; see aakp.org for current news</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://finance.yahoo.com/search?s=kidney" target="_blank">Yahoo Kidney Businesses</a>
+    <span class="broken-badge">404</span>
+    <span class="note">finance.yahoo.com &mdash; Yahoo Finance company search no longer supports this URL format</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://bookstore.archwaypublishing.com/Products/SKU-000690155/Reflections-of-a-Beachcomber.aspx" target="_blank">Reflections of a Beachcomber</a>
+    <span class="broken-badge">dead</span>
+    <span class="note">archwaypublishing.com &mdash; Domain no longer resolves</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.kidney.org/professionals/doqi/palm.cfm" target="_blank">NKF K/DOQI CKD Clinical Action Plan</a>
+    <span class="broken-badge">404</span>
+    <span class="note">kidney.org &mdash; Old NKF URL; current KDOQI guidelines are at kidney.org/professionals/guidelines</span>
+  </li>
+
 </ul>
 
 <div class="footer">
-  <p><a href="../index.html">← Back to Homepage</a></p>
-  <p>Original content © Nephron Information Center | Link status checked March 2026</p>
+  <p><a href="../index.html">&larr; Back to Homepage</a></p>
+  <p>Resources section reproduced from <a href="http://www.nephron.com" target="_blank">nephron.com</a> homepage. Link status checked March 2026.</p>
 </div>
 
 </body>

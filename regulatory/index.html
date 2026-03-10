@@ -7,101 +7,84 @@
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: #000066;
   background: #fff;
-  max-width: 900px;
+  max-width: 860px;
   margin: 2em auto;
   padding: 1em 2em;
   line-height: 1.6;
 }
-h1 {
-  font-size: 36px;
-  color: #980000;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
+h1 { font-size: 32px; color: #980000; font-weight: bold; margin-bottom: 0.3em; }
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   color: #000066;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 1.8em;
+  margin-bottom: 0.6em;
   border-bottom: 2px solid #980000;
-  padding-bottom: 0.3em;
+  padding-bottom: 0.2em;
 }
 .intro {
-  background: #f0f0f0;
-  padding: 1em;
-  border-left: 4px solid #980000;
-  margin-bottom: 2em;
-}
-.link-list {
-  list-style: none;
-  padding: 0;
-}
-.link-item {
-  margin: 1.5em 0;
-  padding: 1em;
-  background: #f9f9f9;
-  border-left: 4px solid #4CAF50;
-  border-radius: 4px;
-}
-.link-title {
-  font-size: 18px;
-  font-weight: bold;
-  color: #000066;
-  margin-bottom: 0.3em;
-}
-.link-url {
+  background: #f0f4ff;
+  padding: 0.8em 1em;
+  border-left: 4px solid #000066;
+  margin-bottom: 1.5em;
   font-size: 14px;
-  color: #666;
-  word-break: break-all;
-  margin-bottom: 0.5em;
+  color: #333;
 }
-.link-status {
-  display: inline-block;
-  padding: 0.2em 0.6em;
-  border-radius: 3px;
-  font-size: 12px;
-  font-weight: bold;
-  margin-top: 0.5em;
+ul.link-list { list-style: none; padding: 0; margin: 0; }
+ul.link-list li {
+  margin: 0.7em 0;
+  padding: 0.5em 0.7em;
+  border-left: 3px solid #4a90d9;
+  background: #f8f9ff;
 }
-.status-working {
-  background: #4CAF50;
-  color: white;
+ul.link-list li.broken {
+  border-left-color: #cc4444;
+  background: #fff8f8;
 }
-a {
+ul.link-list li.restricted {
+  border-left-color: #e68a00;
+  background: #fff8ee;
+}
+ul.link-list li a {
   color: #0000cc;
   text-decoration: none;
+  font-weight: bold;
 }
-a:hover {
-  text-decoration: underline;
+ul.link-list li a:hover { text-decoration: underline; }
+ul.link-list li .note {
+  font-size: 13px;
+  color: #666;
+  display: block;
+  margin-top: 0.2em;
+}
+.broken-badge {
+  display: inline-block;
+  background: #cc4444;
+  color: white;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.restricted-badge {
+  display: inline-block;
+  background: #e68a00;
+  color: white;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+  vertical-align: middle;
 }
 .footer {
-  margin-top: 3em;
+  margin-top: 2.5em;
   padding-top: 1em;
   border-top: 1px solid #ccc;
-  font-size: 14px;
+  font-size: 13px;
   color: #666;
-  text-align: center;
-}
-.stats {
-  background: #e3f2fd;
-  padding: 1em;
-  border-radius: 4px;
-  margin: 2em 0;
-  text-align: center;
-}
-.stats-number {
-  font-size: 32px;
-  font-weight: bold;
-  color: #1976d2;
-}
-.stats-label {
-  font-size: 14px;
-  color: #666;
-  text-transform: uppercase;
 }
 </style>
 </head>
@@ -110,73 +93,225 @@ a:hover {
 <h1>Regulatory References</h1>
 
 <div class="intro">
-  <strong>Archived from:</strong> <a href="http://www.nephron.com" target="_blank">http://www.nephron.com</a> — 
-  Regulatory references section links preserved March 2026
+  This is the <strong>Regulatory References</strong> (REGULATIONS) section from the nephron.com 
+  homepage, reproduced faithfully. Links checked March 2026. Links that were unreachable are 
+  listed in the Broken Links section with their original URLs preserved.
 </div>
 
-<div class="stats">
-  <div>
-    <span class="stats-number">8</span> <span class="stats-label">Total Links</span> | 
-    <span class="stats-number" style="color: #4CAF50;">8</span> <span class="stats-label">Government Agencies</span>
-  </div>
-</div>
-
-<h2>Government & Regulatory Agencies</h2>
-<p style="color: #666; font-style: italic; margin-bottom: 1em;">All US government and regulatory agency links (may have certificate warnings but are accessible)</p>
+<h2>Working Links</h2>
 
 <ul class="link-list">
-  <li class="link-item">
-    <div class="link-title">CMS (Centers for Medicare & Medicaid Services)</div>
-    <div class="link-url"><a href="http://www.cms.gov/" target="_blank">http://www.cms.gov/</a></div>
-    <span class="link-status status-working">→ Government Agency</span>
+
+  <li>
+    <a href="http://edocket.access.gpo.gov/2010/pdf/2010-18466.pdf" target="_blank">CMS 1418F &mdash; Bundled ESRD Prospective Payment System</a>
+    <span class="note">access.gpo.gov &mdash; PDF of the CMS final rule establishing the ESRD bundled payment system</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">ESRD Networks</div>
-    <div class="link-url"><a href="http://www.esrdnetworks.org/" target="_blank">http://www.esrdnetworks.org/</a></div>
-    <span class="link-status status-working">→ Government Agency</span>
+  <li>
+    <a href="http://www.healthcare.gov/news/factsheets/accountablecare03312011a.html" target="_blank">Accountable Care Organization Update Page</a>
+    <span class="note">healthcare.gov &mdash; ACO fact sheet and update (2011)</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">ESRD NCC (Network Coordinating Council)</div>
-    <div class="link-url"><a href="http://www.esrdncc.org/" target="_blank">http://www.esrdncc.org/</a></div>
-    <span class="link-status status-working">→ Government Agency</span>
+  <li>
+    <a href="http://www.cms.hhs.gov/CFCsAndCoPs/downloads/ESRDfinalrule0415.pdf" target="_blank">Conditions for Coverage &mdash; Final Rule</a>
+    <span class="note">cms.hhs.gov &mdash; PDF of the ESRD Conditions for Coverage final rule</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">Conditions for Coverage</div>
-    <div class="link-url"><a href="http://www.cms.gov/CFCsAndCoPs/06_ESRD.asp" target="_blank">http://www.cms.gov/CFCsAndCoPs/06_ESRD.asp</a></div>
-    <span class="link-status status-working">→ Government Agency</span>
+  <li>
+    <a href="http://edocket.access.gpo.gov/2010/pdf/2010-17207.pdf" target="_blank">Meaningful Use &mdash; Final Rule</a>
+    <span class="note">access.gpo.gov &mdash; PDF of the CMS Meaningful Use final rule (2010)</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">OPTN (Organ Procurement and Transplantation Network)</div>
-    <div class="link-url"><a href="http://optn.transplant.hrsa.gov/" target="_blank">http://optn.transplant.hrsa.gov/</a></div>
-    <span class="link-status status-working">→ Government Agency</span>
+  <li>
+    <a href="http://www.cms.hhs.gov/Transmittals/Downloads/R1876CP.pdf" target="_blank">Coverage of Kidney Disease Patient Education Services</a>
+    <span class="note">cms.hhs.gov &mdash; CMS transmittal covering kidney disease patient education service coverage</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">FDA (Food and Drug Administration)</div>
-    <div class="link-url"><a href="http://www.fda.gov/" target="_blank">http://www.fda.gov/</a></div>
-    <span class="link-status status-working">→ Government Agency</span>
+  <li>
+    <a href="http://edocket.access.gpo.gov/2010/E9-31217.htm" target="_blank">Comments due March 15, 2010 &mdash; Meaningful Use Document E9-31217</a>
+    <span class="note">access.gpo.gov &mdash; Federal Register document on Meaningful Use comment period</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">CDC (Centers for Disease Control and Prevention)</div>
-    <div class="link-url"><a href="http://www.cdc.gov/" target="_blank">http://www.cdc.gov/</a></div>
-    <span class="link-status status-working">→ Government Agency</span>
+  <li>
+    <a href="http://en.wikipedia.org/wiki/Zeolite" target="_blank">Medical Director &mdash; Do you know what zeolite is?</a>
+    <span class="note">wikipedia.org &mdash; Zeolites used in water treatment for dialysis</span>
   </li>
 
-  <li class="link-item">
-    <div class="link-title">OSHA (Occupational Safety and Health Administration)</div>
-    <div class="link-url"><a href="http://www.osha.gov/" target="_blank">http://www.osha.gov/</a></div>
-    <span class="link-status status-working">→ Government Agency</span>
+  <li>
+    <a href="http://nephronline.com/uploaded/revised%20new%20cpt%20code.pdf" target="_blank">Coding information for 2009</a>
+    <span class="note">nephronline.com &mdash; PDF of revised CPT codes for 2009</span>
   </li>
+
+  <li>
+    <a href="http://nephron.org/nephsites/nic/administrator" target="_blank">Administrator's Resource Page</a>
+    <span class="note">nephron.org &mdash; Resource page for dialysis facility administrators</span>
+  </li>
+
+  <li>
+    <a href="http://nephron.org/php/CFC.htm" target="_blank">Frequently Asked Questions about CFCs</a>
+    <span class="note">nephron.org &mdash; FAQ on Conditions for Coverage for ESRD facilities</span>
+  </li>
+
+  <li>
+    <a href="http://www.kidneypatientsafety.org/" target="_blank">Keeping Kidney Patients Safe</a>
+    <span class="note">kidneypatientsafety.org &mdash; Patient safety resources for kidney disease</span>
+  </li>
+
+  <li>
+    <a href="http://www.dialysistech.net/uploads/Conditions%20of%20Coverage%20-%20Payne.pdf" target="_blank">Conditions for Coverage Changes</a>
+    <span class="note">dialysistech.net &mdash; PDF presentation on CMS Conditions for Coverage changes</span>
+  </li>
+
+  <li>
+    <a href="http://www.cms.hhs.gov/center/esrd.asp" target="_blank">CMS (ESRD Center)</a>
+    <span class="note">cms.hhs.gov &mdash; CMS End Stage Renal Disease center page</span>
+  </li>
+
+  <li>
+    <a href="https://www.cms.gov/medicare/payment/fee-schedules/physician" target="_blank">Physician Fee Schedule</a>
+    <span class="note">cms.gov &mdash; CMS Medicare Physician Fee Schedule (current)</span>
+  </li>
+
+  <li>
+    <a href="https://www.cms.gov/outreach-and-education/medicare-learning-network-mln/mlnproducts" target="_blank">Evaluation and Management (E &amp; M)</a>
+    <span class="note">cms.gov &mdash; CMS Medicare Learning Network products page; search for current E&amp;M services guide</span>
+  </li>
+
+  <li>
+    <a href="https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5417a1.htm" target="_blank">Tuberculosis Exposure Guidelines</a>
+    <span class="note">cdc.gov &mdash; CDC MMWR: Guidelines for Preventing the Transmission of Mycobacterium tuberculosis in Health-Care Settings</span>
+  </li>
+
+  <li>
+    <a href="https://www.cdc.gov/mmwr/PDF/rr/rr5116.pdf" target="_blank">Guideline for Hand Hygiene in Health-Care Settings MMWR 51-RR16 &mdash; 10-25-02</a>
+    <span class="note">cdc.gov &mdash; CDC MMWR PDF: Guideline for Hand Hygiene in Health-Care Settings (RR-16, 2002)</span>
+  </li>
+
+  <li>
+    <a href="https://www.cdc.gov/handhygiene/index.html" target="_blank">CDC Hand Hygiene Resources (Handwashing)</a>
+    <span class="note">cdc.gov &mdash; CDC hand hygiene hub; replaces the original PowerPoint presentation link</span>
+  </li>
+
+  <li>
+    <a href="http://www.fmqai.com/ESRD/CROWNWeb/" target="_blank">Crownweb</a>
+    <span class="note">fmqai.com &mdash; CROWNWeb ESRD data collection system</span>
+  </li>
+
+  <li>
+    <a href="http://www.qualitynet.org/" target="_blank">QualityNet</a>
+    <span class="note">qualitynet.org &mdash; CMS quality improvement and reporting portal</span>
+  </li>
+
+  <li>
+    <a href="http://www.cdc.gov/mmwr/preview/mmwrhtml/rr5210a1.htm" target="_blank">Guidelines for Environmental Infection Control in Health-Care Facilities</a>
+    <span class="note">cdc.gov &mdash; CDC MMWR recommendations for environmental infection control</span>
+  </li>
+
+  <li>
+    <a href="http://www.cdc.gov/mmwr/preview/mmwrhtml/mm5732a3.htm" target="_blank">Infection Control Requirements for Dialysis Facilities and Clarification Regarding Guidance on Parenteral Medication Vials</a>
+    <span class="note">cdc.gov &mdash; CDC MMWR guidance on dialysis facility infection control</span>
+  </li>
+
+  <li>
+    <a href="http://www.cdc.gov/mmwr/PDF/rr/rr5005.pdf" target="_blank">Recommendations for Preventing Transmission of Infections Among Chronic Hemodialysis Patients</a>
+    <span class="note">cdc.gov &mdash; CDC MMWR PDF on infection prevention in hemodialysis</span>
+  </li>
+
+  <li>
+    <a href="http://www.cdc.gov/mmwr/PDF/rr/rr5110.pdf" target="_blank">Guidelines for the Prevention of Intravascular Catheter-Related Infections</a>
+    <span class="note">cdc.gov &mdash; CDC MMWR PDF on catheter-related infection prevention</span>
+  </li>
+
+</ul>
+
+<h2>Members-Only / Restricted Access</h2>
+<p style="font-size:13px;color:#666;margin-bottom:0.8em;">
+  These links require RPA membership to access.
+</p>
+
+<ul class="link-list">
+
+  <li class="restricted">
+    <a href="http://renalmd.org/" target="_blank">RPA Medical Director Documentation Tool</a>
+    <span class="restricted-badge">Members Only</span>
+    <span class="note">renalmd.org &mdash; Must be an RPA member to access</span>
+  </li>
+
+  <li class="restricted">
+    <a href="http://renalmd.org/" target="_blank">RPA Position Paper on Dialysis Facility Medical Director Responsibilities Under the Revised CMS Conditions for Coverage for ESRD Facilities</a>
+    <span class="restricted-badge">Members Only</span>
+    <span class="note">renalmd.org &mdash; See Conditions for Coverage Final Rule above. Must be an RPA member to access.</span>
+  </li>
+
+</ul>
+
+<h2>Broken / Inaccessible Links</h2>
+<p style="font-size:13px;color:#666;margin-bottom:0.8em;">
+  These links appeared on the nephron.com Regulatory References section but were unreachable 
+  as of March 2026. Original URLs are preserved for reference.
+</p>
+
+<ul class="link-list">
+
+  <li class="broken">
+    <a href="http://www.hipaasurvivalguide.com/" target="_blank">HIPAA Survival Guide</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://www.hipaasurvivalguide.com/ &mdash; domain returns 404</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.therenalnetwork.org/Mdpages/resources_implementation_MedicalDirectorResponsibilities.html" target="_blank">Medical Director Responsibilities from The Renal Network (#9 and #10)</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://www.therenalnetwork.org/... &mdash; page no longer available</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.nwrenalnetwork.org/watermanual.pdf" target="_blank">NW Renal Network Water Manual</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://www.nwrenalnetwork.org/watermanual.pdf &mdash; PDF no longer available</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.cms.hhs.gov/PQRI/03_EPrescribingIncentiveProgram.asp" target="_blank">E-Prescribing</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://www.cms.hhs.gov/PQRI/... &mdash; old CMS PQRI page, no longer available</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.cms.hhs.gov/PQRI/15_MeasuresCodes.asp" target="_blank">Physician Quality Reporting Initiative (measures)</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://www.cms.hhs.gov/PQRI/... &mdash; old CMS PQRI page, no longer available</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.cms.hhs.gov/pqri/" target="_blank">Physician Quality Reporting Initiative (PQRI)</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://www.cms.hhs.gov/pqri/ &mdash; old CMS PQRI page, no longer available</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.premierinc.com/safety/topics/guidelines/downloads/Disinfection_Nov_2008.pdf" target="_blank">Disinfection and Sterilization in Healthcare Facilities</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://www.premierinc.com/... &mdash; PDF no longer available at Premier Inc</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.cdc.gov/vaccines/pubs/downloads/b_dialysis_guide.pdf" target="_blank">Guidelines for Vaccinating Kidney Dialysis Patients and Patients with Chronic Kidney Disease</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://www.cdc.gov/vaccines/... &mdash; CDC PDF no longer at this URL</span>
+  </li>
+
+  <li class="broken">
+    <a href="http://www.aami.org/publications/standards/dialysis.html" target="_blank">AAMI Dialysis Standards Collection</a>
+    <span class="broken-badge">404</span>
+    <span class="note">http://www.aami.org/... &mdash; AAMI has reorganized their publications catalog</span>
+  </li>
+
 </ul>
 
 <div class="footer">
-  <p><a href="../index.html">← Back to Homepage</a></p>
-  <p>Original content © Nephron Information Center | Link status checked March 2026</p>
+  <p><a href="../index.html">&larr; Back to Homepage</a></p>
+  <p>Regulatory References section reproduced from <a href="http://www.nephron.com" target="_blank">nephron.com</a> homepage. Link status checked March 2026.</p>
 </div>
 
 </body>
