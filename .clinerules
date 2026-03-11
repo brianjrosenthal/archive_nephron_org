@@ -12,6 +12,12 @@
 - Multi-line commit messages should be written to a temp file first:
   `echo "first line" > /tmp/msg.txt && echo "" >> /tmp/msg.txt && echo "details" >> /tmp/msg.txt && git commit -F /tmp/msg.txt`
 
+## Archiving Rules
+
+- **Never invent or add content when archiving.** When asked to archive a page, reproduce only what actually exists at the source URL — text, images, links, layout. Do NOT add explanatory notes, alternative resources, modern replacements, or any content that was not on the original page unless the user asks you to do so, or you explicitly clear it with the user.
+
+- **Ask before substituting content.** If the original page is empty, missing, or unavailable (live site returns no content, Wayback Machine has no snapshots), **stop and ask the user** what they would like to do before creating any substitute content. Do not silently create a placeholder or redirect page.
+
 ## Project Context
 
 This is an archive of selected content from nephron.com and nephron.org, created and maintained by Stephen Z. Fadem, M.D. The archive preserves kidney disease education resources.
