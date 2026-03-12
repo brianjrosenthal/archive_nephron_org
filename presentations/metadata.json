@@ -100,5 +100,53 @@
     "title": "Veins",
     "slides": 50,
     "extension": "gif"
+  },
+  {
+    "name": "CFC",
+    "title": "CMS ESRD Conditions for Coverage (CFC)",
+    "slides": 77,
+    "extension": "gif"
+  },
+  {
+    "name": "CKD",
+    "title": "EMPOWER \u2014 Chronic Kidney Disease",
+    "slides": 81,
+    "extension": "gif"
+  },
+  {
+    "name": "diabetes1",
+    "title": "Diabetic Nephropathy",
+    "slides": 60,
+    "extension": "gif"
+  },
+  {
+    "name": "Flenniken",
+    "title": "Flenniken",
+    "slides": 41,
+    "extension": "gif"
+  },
+  {
+    "name": "gela",
+    "title": "Disaster Preparedness (GELA)",
+    "slides": 32,
+    "extension": "gif"
+  },
+  {
+    "name": "Hagstrom",
+    "title": "Disaster Preparedness \u2014 Hagstrom",
+    "slides": 68,
+    "extension": "gif"
+  },
+  {
+    "name": "Meaningful_Use",
+    "title": "Using Information to your Advantage",
+    "slides": 60,
+    "extension": "gif"
+  },
+  {
+    "name": "VAAM2",
+    "title": "VAAM2",
+    "slides": 270,
+    "extension": "gif"
   }
 ]
