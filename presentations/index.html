@@ -53,9 +53,31 @@ h1 { font-size: 28px; color: #000066; margin-bottom: 0.5em; }
 .back-link { margin-top: 2em; padding-top: 1em; border-top: 1px solid #ccc; font-size: 14px; }
 .back-link a { color: #0000cc; text-decoration: none; }
 .back-link a:hover { text-decoration: underline; }
+
+#header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #980000;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+#header img { height: 50px; }
+#header-title {
+  margin-left: auto;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000066;
+  text-decoration: none;
+}
+#header-title:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
+<div id="header">
+  <a href="../index.html"><img src="../nictitle1.gif" alt="Nephron Information Center" border="0"></a>
+  <a href="../index.html" id="header-title">nephron.org</a>
+</div>
+
 <div class="container">
   <div class="archived-note">
     <strong>Archived from:</strong> <a href="index.html">presentations/index.html</a> — Archived March 2026
