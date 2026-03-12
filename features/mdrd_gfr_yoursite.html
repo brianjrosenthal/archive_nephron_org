@@ -91,9 +91,31 @@ font-size:12px;
 th{background:#EEE;width:auto; text-align:center; padding:5px 0;border:0px solid #00F;}
 td{width:auto; text-align:center; padding:5px 0;border:0px solid #00F;background:#EEE;}
 tr:nth-child(even) {background: #EEE;}
+
+#header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #980000;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+#header img { height: 50px; }
+#header-title {
+  margin-left: auto;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000066;
+  text-decoration: none;
+}
+#header-title:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
+<div id="header">
+  <a href="../index.html"><img src="../nictitle1.gif" alt="Nephron Information Center" border="0"></a>
+  <a href="../index.html" id="header-title">nephron.org</a>
+</div>
+
 <h2>Put the eGFR ON YOUR WEB SITE</h2>
 <h3>&copy; Stephen Z. Fadem, M.D., FASN</h3>
 <hr style="margin:1px,1px,1px,1px;padding:0px;border-bottom:1px solid red;">
